@@ -6,11 +6,14 @@ class SocialButton extends StatelessWidget {
   final String iconPath;
   final String label;
   final double horizontalPadding;
-  const SocialButton(
-      {super.key,
-      required this.iconPath,
-      required this.label,
-      this.horizontalPadding = 100});
+  // final VoidCallback onPressed;
+  const SocialButton({
+    super.key,
+    required this.iconPath,
+    required this.label,
+    this.horizontalPadding = 100,
+    // required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
